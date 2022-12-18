@@ -1,0 +1,9 @@
+README.md
+setup.py
+HW3.egg-info/PKG-INFO
+HW3.egg-info/SOURCES.txt
+HW3.egg-info/dependency_links.txt
+HW3.egg-info/entry_points.txt
+HW3.egg-info/top_level.txt
+model/model.py
+model/ptediction.py

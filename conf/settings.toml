@@ -1,0 +1,7 @@
+link = 'https://raw.githubusercontent.com/VanyaVel/HW3/HW3/data/diabetes.csv'
+random_state_HW3 = 3
+cv = 10
+dir = 'model/conf'
+target = 'Outcome'
+LogisticRegression = {"penalty"= ['l2'], "tol"= [1e-4, 1e-5, 1e-6], 'C' = [1,2,3,4,10], 'solver'= ['liblinear'], class_weight = ['balanced']}
+RidgeClassifier = {"alpha"= [1, 3, 10], "tol"= [1e-4, 1e-5, 1e-6], 'max_iter' = [1e+3, 1e+5], 'solver'= ['auto', 'svd', 'cholesky', 'lsqr'], class_weight = ['balanced']}

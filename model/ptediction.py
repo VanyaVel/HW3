@@ -21,7 +21,11 @@ def prediction(model:str, values:list) -> int:
             data = get_data(settings.link) #taking data
             train_model(model, data, settings.target, settings[model]) #put it in train function
             lg.info('Model trained')
-    lg.info('Load the model')
-    model = load_model(settings.dir, model) #load model
-    lg.info('Model was loaded')
-    return model.predict(values)
+        else:
+            lg.info('Model exist in path')
+        lg.info('Load the model')
+        model = load_model(settings.dir, model) #load model
+        lg.info('Model was loaded')
+        return model.predict(values)
+    else:
+        return 'This model are not supported'
